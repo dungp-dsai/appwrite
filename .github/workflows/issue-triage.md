@@ -9,22 +9,6 @@ on:
 permissions: read-all
 network: defaults
 
-safe-outputs:
-  add-labels:
-    max: 100
-    target: "*"
-  add-comment:
-    max: 10
-    target: "*"
-
-tools:
-  web-fetch:
-  web-search:
-  github:
-    toolsets:
-      - default
-      - labels
-
 timeout-minutes: 10
 source: githubnext/agentics/workflows/issue-triage.md@0837fb7b24c3b84ee77fb7c8cfa8735c48be347a
 ---
